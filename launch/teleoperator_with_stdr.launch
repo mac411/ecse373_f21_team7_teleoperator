@@ -1,0 +1,7 @@
+<launch>
+    <arg name="namespace" default="robot0"/>
+    <include file="$(find teleoperator)/launch/teleoperator.launch">
+        <arg name="namespace" value="$(arg namespace)"/>
+    </include>
+    <include file="$(find stdr_launchers)/launch/server_with_map_and_gui.launch"/>
+</launch>
