@@ -1,4 +1,5 @@
 <launch>
     <arg name="namespace" default="robot0" />
     <node name="teleoperator_node" type="teleoperator_node" pkg="teleoperator" ns="$(arg namespace)" output="screen"/>
+    <node name="rqt" type="rqt_gui" pkg="rqt_gui" ns="$(arg namespace)"/>
 </launch>
