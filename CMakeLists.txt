@@ -9,8 +9,10 @@ project(teleoperator)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  std_msgs
   geometry_msgs
+  sensor_msgs
+  stdr_launchers
+  rqt_gui
 )
 
 ## System dependencies are found with CMake's conventions
